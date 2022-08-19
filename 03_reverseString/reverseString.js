@@ -6,6 +6,14 @@ const reverseString = function(str) {
     }
 
     return output;
+
+
+    // Better solution - leaving the above for reference
+    //
+    // return str.split("").reverse().join("");
+    // This splits the string into an array, uses the array function to reverse
+    //
+    // then rejoins the array into a string.
 };
 
 // Do not edit below this line
