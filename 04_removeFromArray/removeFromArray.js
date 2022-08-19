@@ -4,15 +4,14 @@ const removeFromArray = function() {
 
     let array = args[0]; // Selecting the array from the first element (array.from?)
 
-    console.log(`Length of array: ${args.length}`)
-
     const ids = args.slice(1,);
 
-    console.log(`Items to be removed: ${ids}`);
     
     for (const id of ids) {
-        console.log(`Removing ${id}`)
-        array.splice(array.indexOf(id),1);
+        if(array.includes(id)) {
+            array.splice(array.indexOf(id),1);            
+        }
+
     }        
 
     return array
