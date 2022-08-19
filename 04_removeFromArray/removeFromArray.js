@@ -1,4 +1,4 @@
-const removeFromArray = function() {
+const removeFromArray = function () {
     // First argument must be an array, remaining arguments will be removed from that array.
     const args = Array.from(arguments);
 
@@ -6,13 +6,12 @@ const removeFromArray = function() {
 
     const ids = args.slice(1,);
 
-    
     for (const id of ids) {
-        if(array.includes(id)) {
-            array.splice(array.indexOf(id),1);            
+        if (array.includes(id)) {
+            array.splice(array.indexOf(id), 1);
         }
 
-    }        
+    }
 
     return array
 };
