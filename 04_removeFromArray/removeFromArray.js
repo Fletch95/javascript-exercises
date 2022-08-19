@@ -6,19 +6,14 @@ const removeFromArray = function() {
 
     console.log(`Length of array: ${args.length}`)
 
-    if (args.length == 2) {
-        console.log(`Removing ${args[1]}`)
-        array.splice(array.indexOf(args[1]),1)
-    } else {
-        const ids = args.slice(1,);
+    const ids = args.slice(1,);
 
-        console.log(`Items to be removed: ${ids}`);
-        
-        for (const id of ids) {
-            console.log(`Removing ${id}`)
-            array.splice(array.indexOf(id),1);
-        }        
-    }
+    console.log(`Items to be removed: ${ids}`);
+    
+    for (const id of ids) {
+        console.log(`Removing ${id}`)
+        array.splice(array.indexOf(id),1);
+    }        
 
     return array
 };
